@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 222;
+}
+.mobile{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:$verylightgray;
+    .mock-mobile{
+       height: 100%;
+        width: 100%;
+    }
+
+}
+
+#mobile-links{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+  
+
+}
+.m-text{
+    text-align: center;
+    background-color: $verylightgray;
+    
+}
+
+.m-links{
+    height: 100vh;
+    // border-radius: 8px;
+    position: fixed;
+left: -100%;
+// transform: translate(-50%, -50%);
+top:10VH;
+width: 100%;
+padding: 25px 0;
+transition:.5s ease-in-out;
+
+background-color: rgba(26, 27, 39, 0.9);
+
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    background-color: WHITE;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px 0;
+gap: 20px;
+justify-content: center;
+align-items: center;
+li a{
+    color: $darkblue;
+}
+
+
+
+}
+#hamburger{
+    cursor: pointer;
+}
+
+.active{
+    left: 0;
+   
+}
+// desktop nav
+.d-links{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.hero{
+    height:100vh ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $verylightgray;
+    .left{
+        width: 100%;
+        margin-left: 70px;
+        p{
+            margin: 30px 0;
+            line-height: 30px;
+        }
+    }
+}
+.mock-bg{
+    
+  height: 100%;
+  width: 50%;
+  background: url('../images/bg-intro-desktop.svg');
+  img{
+    height:700px;
+    width: 800px;
+    
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 912px){
+    .mobile{
+        display: none;
+    }
+    .m-text{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 912px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .m-text{
+        display: block;
+    }
+    
+    
+}

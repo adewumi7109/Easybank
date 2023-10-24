@@ -1,0 +1,24 @@
+.services{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+   
+}
+
+@media screen and (max-width: 584px) {
+    #services{
+        text-align: center;
+    }
+    .service{
+        width: 100%;
+        padding: 6px;
+       h2{
+        font-size: 1rem;
+       }
+       p{
+        font-size: .8rem;
+       }
+    }
+}

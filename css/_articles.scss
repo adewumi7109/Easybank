@@ -1,0 +1,40 @@
+#articles{
+    background-color: $verylightgray;
+    .articles{
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .article{
+        background-color: $white;
+        border-radius: 10px;
+        img{
+            max-width: 100%;
+            height: 300px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .article-body{
+            padding: 19px;
+            color: $grayishblue;
+           p{
+            font-size: .7rem;
+           
+           }
+        }
+        span{
+            font-size: .8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 584px) {
+ #articles{
+     .article{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+     }
+ }
+}
